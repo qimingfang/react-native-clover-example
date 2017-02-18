@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native'
-import Wilson from './app/index'
+import Clover from './app/index'
 
-AppRegistry.registerComponent('ReactNativeClover', () => Wilson)
+AppRegistry.registerComponent('ReactNativeClover', () => Clover)

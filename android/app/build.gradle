@@ -86,9 +86,6 @@ android {
     signingConfigs {
         unifi {
             keyAlias 'unifi'
-            keyPassword '123456'
-            storeFile file('/Users/qiming/Desktop/unifi-hackathon.jks')
-            storePassword '123456'
         }
     }
     compileSdkVersion 23

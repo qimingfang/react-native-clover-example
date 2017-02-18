@@ -29,7 +29,6 @@ class CloverPackage extends ReactContextBaseJavaModule {
     @Override
     public void onReceive(Context context, Intent intent) {
       BarcodeResult barcodeResult = new BarcodeResult(intent);
-
       if (barcodeResult.isBarcodeAction()) {
         String barcode = barcodeResult.getBarcode();
         mContext
@@ -64,7 +63,6 @@ class CloverPackage extends ReactContextBaseJavaModule {
     Bundle extras = new Bundle();
     extras.putBoolean(Intents.EXTRA_LED_ON, false);
     extras.putBoolean(Intents.EXTRA_SCAN_QR_CODE, true);
-    extras.putBoolean(Intents.EXTRA_SCAN_1D_CODE, true);
     mBarcodeScanner.executeStartScan(extras);
   }
 }
